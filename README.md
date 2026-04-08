@@ -55,6 +55,7 @@
     ```
     * Lo usas cuando ya tienes el repo clonado y quieres actualizarlo.
     * Es equivalente a `git fetch` + `git merge` juntos.
+
 **¿Cómo se realizó el fork?**
 Fui al repositorio del docente y presioné el botón **Fork** (arriba a la derecha) para copiarlo a mi cuenta personal de GitHub.
 
