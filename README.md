@@ -57,12 +57,14 @@
     * Es equivalente a `git fetch` + `git merge` juntos.
 
 **¿Cómo se realizó el fork?**
+
 Fui al repositorio del docente y presioné el botón **Fork** (arriba a la derecha) para copiarlo a mi cuenta personal de GitHub.
 
 ![FORK](img/Pregunta1/f.png)
 
 
 **¿Cómo se realizó el clone del fork?**
+
 Abrí la terminal y ejecuté los siguientes comandos:
 
 ```bash
@@ -74,7 +76,9 @@ Con esto descargué todo el contenido de mi fork en mi equipo local,
 incluyendo el historial de commits y las ramas.
 
 ![Clone](img/Pregunta1/Clone.png)
+
 **¿Cómo se verificó que se estaba trabajando sobre el fork y no sobre el repositorio original?**
+
 Ejecuté el comando:
 
 **git remote -v**
