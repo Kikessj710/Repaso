@@ -62,32 +62,31 @@ Fui al repositorio del docente y presioné el botón **Fork** (arriba a la derec
 
 
 **¿Cómo se realizó el clone del fork?**
+Abrí la terminal y ejecuté los siguientes comandos:
 
+```bash
+git clone https://github.com/Kikessj710/Repaso.git
+cd Repaso
+```
 
+Con esto descargué todo el contenido de mi fork en mi equipo local, 
+incluyendo el historial de commits y las ramas.
 
-Luego, abrí la terminal en mi computadora y ejecuté los siguientes comandos:
-
-git clone https://github.com/AnthonyPSW/EVALUACION_1P.git
-cd EVALUACION_1P
-
-![FORK](img/Pregunta1/Clone.png)
-
-
-Con esto descargué todo el contenido del repositorio en mi equipo local, incluyendo el historial de commits y las ramas.
-
+![Clone](img/Pregunta1/Clone.png)
 **¿Cómo se verificó que se estaba trabajando sobre el fork y no sobre el repositorio original?**
 Ejecuté el comando:
 
 **git remote -v**
 
+Ejecuté el comando:
 
-Esto mostró la siguiente información:
+```bash
+git remote -v
+```
 
-origin	https://github.com/AnthonyPSW/EVALUACION_1P.git (fetch)
-origin	https://github.com/AnthonyPSW/EVALUACION_1P.git (push)
-
-Al ver que la direccion corresponde a mi cuenta de GitHub, confirme que estaba trabajando sobre mi fork personal y no sobre el repositorio original.
-
+Y la salida mostró:
+origin  https://github.com/Kikessj710/Repaso.git (fetch)
+origin  https://github.com/Kikessj710/Repaso.git (push)
 ![FORK](img/Pregunta1/Remote.png)
 
 
