@@ -1,9 +1,9 @@
-# Universidad [Nombre de la Universidad]  
-## Facultad de [Nombre de la Facultad]  
+# Universidad Tecnica de Ambato 
+## Facultad de Ingenieria en sistemas 
 ### Carrera de Ingeniería en Software  
 
 **Asignatura:** Manejo y Configuración de Software  
-**Nombre del Estudiante:** Anthony Israel Punina Chisag 
+**Nombre del Estudiante:** Rodolfo Enrique Zambrano Alban 
 **Fecha:** 07/10/2025
 
 ---
@@ -11,14 +11,6 @@
 # Evaluación Práctica de Git y GitHub
 
 ## Instrucciones Generales
-
-- Cada pregunta debe ser respondida directamente en este archivo **(README.md)** debajo del enunciado correspondiente.
-- Cada respuesta debe ir acompañada de uno o más **commits**, según se indique en cada pregunta.
-- Cuando se indique, deberán realizarse acciones prácticas dentro del repositorio (como creación de archivos, ramas, resolución de conflictos, etc.).
-- Cada pregunta debe estar **etiquetada con un tag**, únicamente en el commit final correspondiente, con el formato: `"Pregunta 1"`, `"Pregunta 2"`, etc.
-
----
-
 ## Pregunta 1 (1 punto)
 
 **Explicar la diferencia entre los siguientes conceptos/comandos en Git y GitHub:**
@@ -39,28 +31,38 @@
 **📝 Respuesta:**
 
 **Diferencia entre los siguientes conceptos/comandos en Git y GitHub**
+#### 1.1 Diferencias entre conceptos
+* **git clone**
+    Copia un repositorio remoto a tu máquina local.
+    ```bash
+    git clone [https://github.com/usuario/repositorio.git](https://github.com/usuario/repositorio.git)
+    ```
+    * Descarga todo el historial, ramas y archivos.
+    * Lo usas cuando quieres trabajar localmente en un proyecto.
+    * Mantiene conexión con el repositorio original (origin).
 
-**git clone**
-Es un comando que permite copiar un repositorio remoto a tu nuestra computadora local, clona todo el historial, ramas y archivos del proyecto, permitiendo trabajar de manera independiente en tu entorno local.
+* **fork**
+    Crea una copia de un repositorio en **TU** cuenta de GitHub.
+    * Es una operación de GitHub (no de Git), se hace desde el navegador.
+    * Te da tu propia versión independiente del proyecto.
+    * Se usa cuando quieres contribuir a un proyecto ajeno sin tener permisos directos.
+    * Después del fork, normalmente haces `clone` de tu fork para trabajar localmente.
 
-**fork**
-Es una copia completa de un repositorio remoto que se crea directamente en tu cuenta de GitHub. Su propósito es permitirte modificar el código sin afectar el repositorio original, ideal para colaborar en proyectos de otros usuarios.
-
-**git pull**
-Se utiliza para actualizar tu repositorio local con los últimos cambios realizados en el repositorio remoto. Internamente combina los comandos git fetch (descargar cambios) y git merge (fusionar cambios).
-### Parte práctica:
-
+* **git pull**
+    Trae los cambios nuevos del repositorio remoto y los fusiona en tu rama local.
+    ```bash
+    git pull origin main
+    ```
+    * Lo usas cuando ya tienes el repo clonado y quieres actualizarlo.
+    * Es equivalente a `git fetch` + `git merge` juntos.
 **¿Cómo se realizó el fork?**
+Fui al repositorio del docente y presioné el botón **Fork** (arriba a la derecha) para copiarlo a mi cuenta personal de GitHub.
 
-Ingresé al repositorio original del docente con esta url: https://github.com/santiagojara/EVALUACION_1P en GitHub y presioné el botón Fork ubicado en la esquina superior derecha. Luego seleccioné mi cuenta personal para crear una copia del repositorio dentro de mi perfil. GitHub generó automáticamente una versión idéntica del repositorio original, pero ahora en mi usuario.
-
-![FORK](img/Pregunta1/Fork.png)
+![FORK](img/Pregunta1/f.png)
 
 
 **¿Cómo se realizó el clone del fork?**
-Copié la URL de mi fork:
 
-https://github.com/AnthonyPSW/EVALUACION_1P.git
 
 
 Luego, abrí la terminal en mi computadora y ejecuté los siguientes comandos:
